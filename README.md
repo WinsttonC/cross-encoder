@@ -41,7 +41,7 @@ The quality of the model is evaluated using the Mean Reciprocal Rank at 5 (MRR@5
 <img src="images/bert.png" alt="BERT" width="500"/>
 
 ## Conclusion
-The cross-encoder significantly improves document retrieval accuracy in the RAG system for Russian language queries. While logistic regression and BERT classifiers showed improvements, the baseline cosine similarity method on `intfloat/multilingual-e5-large` embeddings remained highly effective. Future work may involve further fine-tuning of embedding models or domain-specific classifier training.
+The cross-encoder does not significantly increase the accuracy of the retriever in the RAG system for queries in Russian on test data. While logistic regression and BERT classifiers showed improvements, the baseline cosine similarity method on `intfloat/multilingual-e5-large` embeddings remained highly effective. Future work may involve further fine-tuning of embedding models or domain-specific classifier training.
 
 ## Usage
 To replicate the experiments or train the models:
@@ -52,7 +52,8 @@ To replicate the experiments or train the models:
 
 ## Datasets
 sberquad [data](https://huggingface.co/datasets/kuznetsoffandrey/sberquad)/[article](https://arxiv.org/abs/1912.09723)
+
 russian_super_glue [data](https://huggingface.co/datasets/RussianNLP/russian_super_glue)/[article](https://arxiv.org/abs/2010.15925)
 
 ## References
-Rating of Russian-language encoders -encodechka [github](https://github.com/avidale/encodechka)/[article](https://habr.com/ru/articles/669674/)
+Rating of Russian-language encoders - encodechka [github](https://github.com/avidale/encodechka)/[article](https://habr.com/ru/articles/669674/)
