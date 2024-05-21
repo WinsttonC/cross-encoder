@@ -33,8 +33,10 @@ The quality of the model is evaluated using the Mean Reciprocal Rank at 5 (MRR@5
 
 ## Cosine similarity
 <img src="images/cos.png" alt="Cosine similarity" width="500"/>
+
 ## LogReg
 <img src="images/logreg.png" alt="LogReg" width="500"/>
+
 ## BERT
 <img src="images/bert.png" alt="BERT" width="500"/>
 
