@@ -31,6 +31,13 @@ The quality of the model is evaluated using the Mean Reciprocal Rank at 5 (MRR@5
 - Logistic regression achieved an MRR@5 of 0.85.
 - BERT achieved an MRR@5 of 0.89.
 
+In the pictures below, step is `chunk_size`(except for BERT):
+- 0 = 128 tokens
+- 1 = 256 tokens
+- 2 = 512 tokens
+- 3 = 1024 tokens
+- 4 = 2048 tokens
+
 ## Cosine similarity
 <img src="images/cos.png" alt="Cosine similarity" width="500"/>
 
