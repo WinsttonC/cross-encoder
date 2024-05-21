@@ -16,7 +16,7 @@ The cross-encoder improves the Naive-RAG system by enhancing the ranking of docu
 1. Retrieving N relevant documents based on cosine similarity between the query vector and document vectors.
 2. Re-ranking these documents using a classifier to select the top K most relevant chunks for the LLM.
 
-[architecture](images/architecture.jpg)
+![architecture](images/architecture.png)
 
 The chosen embedding models for creating text embeddings are:
 - `intfloat/multilingual-e5-large`
@@ -30,10 +30,13 @@ The quality of the model is evaluated using the Mean Reciprocal Rank at 5 (MRR@5
 - The highest MRR@5 for `intfloat/multilingual-e5-large` with cosine similarity was 0.93.
 - Logistic regression achieved an MRR@5 of 0.85.
 - BERT achieved an MRR@5 of 0.89.
-- 
-![Cosine similarity](images/cos.png]
-![LogReg](images/logreg.png)
-![BERT](images/bert.png)
+
+## Cosine similarity
+<img src="images/cos.png" alt="Cosine similarity" width="500"/>
+## LogReg
+<img src="images/logreg.png" alt="LogReg" width="500"/>
+## BERT
+<img src="images/bert.png" alt="BERT" width="500"/>
 
 ## Conclusion
 The cross-encoder significantly improves document retrieval accuracy in the RAG system for Russian language queries. While logistic regression and BERT classifiers showed improvements, the baseline cosine similarity method on `intfloat/multilingual-e5-large` embeddings remained highly effective. Future work may involve further fine-tuning of embedding models or domain-specific classifier training.
