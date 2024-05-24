@@ -1,4 +1,4 @@
-# Cross-encoder for RAG
+# Cross-encoder reranker for RAG
 
 ## Introduction
 This project aims to improve the response generation quality of the Retrieval-Augmented Generation (RAG) system by enhancing its retriever component. The focus is on developing a cross-encoder specifically designed for the Russian language, which is currently lacking in publicly available cross-encoders that integrate well with open-source language models.
